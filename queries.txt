@@ -1,0 +1,4 @@
+SELECT Occupation, AVG(Age) AS Average_Age FROM food GROUP BY Occupation
+SELECT "Educational Qualifications", AVG("Family size") AS Avg_Family_Size FROM food GROUP BY "Educational Qualifications" ORDER BY Avg_Family_Size DESC
+SELECT Occupation, COUNT(*) AS Total_Count FROM food GROUP BY Occupation ORDER BY Total_Count DESC
+SELECT Occupation, COUNT(*) AS Total_Count FROM food WHERE Gender = 'Female' GROUP BY Occupation ORDER BY Total_Count DESC LIMIT 1
